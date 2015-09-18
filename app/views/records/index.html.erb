@@ -1,0 +1,8 @@
+<h1>Rock 'n Rails</h1>
+<% @records.each do |record| %>
+	<p>Title: <%= record.title %></p>
+	<p>Artist: <%= record.artist %></p>
+	<p><img src="<%= record.cover_art %>"></p>
+	<a href="/records/<%= record.id %>">Show Record</a>
+	<% end %>
+
